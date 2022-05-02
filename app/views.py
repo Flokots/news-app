@@ -10,16 +10,23 @@ def index():
   '''
 
   # Getting Top Headlines News
-  top_headlines = get_news('top-headlines')
-  print(top_headlines)
+  general = get_news('general')
+  business = get_news('business')
+  entertainment = get_news('entertainment')
+  health = get_news('health')
+  science = get_news('science')
+  sports = get_news('sports')
+  technology = get_news('technology')
+
+ 
   title = "The Nightngale News App"
-  return render_template('index.html', title = title, top_headlines = top_headlines)
+  return render_template('index.html', title = title, general = general, business = business, entertainment = entertainment, health=health, science=science, sports=sports, technology=technology)
 
 
 @app.route('/news/<id>')
 def news(id):
   '''
-  View news page function that returns the news articles pages and its data
+  View news page function that returns the news pages and its data
   '''
 
   return render_template('news.html', id=id)
