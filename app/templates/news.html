@@ -1,1 +1,18 @@
-<h1> Hello News {{ id }} </h1>
+{% extends 'base.html' %}
+<!--Content block-->
+{% block content %}
+<!--image background-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="background: url({{news_article.urlToImage}}) no-repeat center center">
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h3>{{ news_article.title }}</h3>
+        <p>{{ news_article.description }}</p>
+        <p>{{ news_article.publishedAt }}</p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

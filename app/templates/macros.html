@@ -1,7 +1,20 @@
 {% macro displayNewsList(news_list) %}
 
+<!-- id: "abc-news",
+name: "ABC News",
+description: "Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.",
+url: "https://abcnews.go.com",
+category: "general",
+language: "en",
+country: "us" -->
   {% for news in news_list %}
-    <li>{{ news.name }} - {{ news.description }}</li>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+      <a href="/news/{{news.id}}">
+        <h3>{{news.name}}</h3>
+        <p>{{news.description}}</p>
+      </a>
+    </div>
+    
   {% endfor %}
 
 {% endmacro %}

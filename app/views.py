@@ -23,7 +23,7 @@ def index():
   return render_template('index.html', title = title, general = general, business = business, entertainment = entertainment, health=health, science=science, sports=sports, technology=technology)
 
 
-@app.route('/article/<id>')
+@app.route('/news/<id>')
 def news(id):
   '''
   View news page function that returns the news articles pages and its data
