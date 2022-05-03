@@ -1,64 +1,73 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 
+<!--Styles block -->
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+
+{% endblock %}
+
 <!--Content block -->
 {% block content %}
-<h1> Top Headlines Sources</h1>
+<div class="container">
+  <h1> Top Headlines Sources</h1>
 
-<!--General Section-->
-<div>
-  <h3> General News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(general)}}
-  </ul>
-</div>
+  <!--General Section-->
+  <div class="container">
+    <h3> General News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(general)}}
+    </ul>
+  </div>
 
+  <!--Business Section-->
+  <div class="container">
+    <h3> Business News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(business)}}
+    </ul>
+  </div>
 
- <!--Business Section-->
-<div>
-  <h3> Business News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(business)}}
-  </ul>
-</div>
+  <!--Entertainment Section-->
+  <div class="container">
+    <h3> Entertainment News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(entertainment)}}
+    </ul>
+  </div>
 
- <!--Entertainment Section-->
- <div>
-  <h3> Entertainment News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(entertainment)}}
-  </ul>
-</div>
+  <!--Health Section-->
+  <div class="container">
+    <h3> Health News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(health)}}
+    </ul>
+  </div>
 
- <!--Health Section-->
- <div>
-  <h3> Health News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(health)}}
-  </ul>
-</div>
+  <!--Science Section-->
+  <div class="container">
+    <h3> Science News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(science)}}
+    </ul>
+  </div>
 
- <!--Science Section-->
- <div>
-  <h3> Science News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(science)}}
-  </ul>
-</div>
+  <!--Sports Section-->
+  <div class="container">
+    <h3> Sports News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(sports)}}
+    </ul>
+  </div>
 
- <!--Sports Section-->
- <div>
-  <h3> Sports News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(sports)}}
-  </ul>
-</div>
+  <!--Technology Section-->
+  <div class="container">
+    <h3> Technology News Sources</h3>
+    <ul>
+      {{ macro.displayNewsList(technology)}}
+    </ul>
+  </div>
 
- <!--Technology Section-->
- <div>
-  <h3> Technology News Sources</h3>
-  <ul>
-    {{ macro.displayNewsList(technology)}}
-  </ul>
 </div>
 {% endblock%}
