@@ -16,6 +16,8 @@ Parents are busy workers and they get home really late. They always miss the new
 * Python
 * Flask
 * Heroku
+* HTML
+* CSS
 ### Project Setup 
 1. Clone this repository.
 2. `cd` into the cloned repository.
