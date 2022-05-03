@@ -5,7 +5,7 @@ Parents are busy workers and they get home really late. They always miss the new
 [Florence Kotohoyoh](https://github.com/Flokots/)
 
 ### Demo
-The Nightngale News App
+[The Nightngale News App](https://thenightngale-news-app.herokuapp.com/)
 
 ### User Stories
 1. As a user, I would like to see various news sources on the homepage of the application.
