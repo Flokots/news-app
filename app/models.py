@@ -1,5 +1,3 @@
-from inspect import isdatadescriptor
-
 
 class NewsSource:
   '''

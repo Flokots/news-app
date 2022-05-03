@@ -1,6 +1,5 @@
 import unittest
-from models import news
-NewsArticle = news.NewsArticle
+from app.models import NewsArticle
 
 class NewsArticleTest(unittest.TestCase):
   '''
@@ -32,7 +31,3 @@ class NewsArticleTest(unittest.TestCase):
     self.assertEqual(self.new_news_article.publishedAt, "2022-05-02T21:52:21.8015368Z")
 
 
-  
-
-if __name__ == '__main__':
-  unittest.main()
