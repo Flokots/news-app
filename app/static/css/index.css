@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:wght@300&display=swap');
+
 body {
   background-color: #191923;
 }
@@ -9,6 +11,7 @@ body {
 h1, h2, h3 {
   color: #F39237;
   text-align: center;
+  font-family: 'Cinzel', serif;
 }
 
 .title-div {
