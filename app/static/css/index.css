@@ -23,8 +23,8 @@ h1, h2, h3 {
   color: #191923;
   border-radius: 2px;
   border:#191923;
-  padding: 1em;
-  margin: 1em;
+  padding: 2em;
+  margin: 2.5em;
 }
 
 img {
@@ -44,4 +44,3 @@ img {
 .article-h3 {
   color:#191923;
 }
-
